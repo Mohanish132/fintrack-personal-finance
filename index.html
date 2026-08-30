@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+    <title>FinTrack - Personal Finance Manager</title>
+
+    <link rel="stylesheet" href="styles.css">
+
+  </head>
+
+  <body>
+  
+    <!--Navigation Bar-->
+    <header class="navbar">
+      <div class="logo">
+        <span class="logo-icon">₹</span>
+        <span>FinTrack</span>
+      </div>
+    
+      <nav>
+        <a href="index.html">Dashboard</a>
+        <a href="transactions.html">Transactions</a>
+        <a href="add-transaction.html" class="nav-add-btn">
+          + Add Transaction
+        </a>
+      </nav>
+    </header>
+
+    <!--Main Dashboard-->
+    <main class="dashboard">
+
+      <!--Dashboard Header-->
+      <section class="dashboard-header">
+
+        <div>
+          <h1>Dashboard</h1>
+          <p>Here's your financial overview.</p>
+        </div>
+
+        <a href="add-transaction.html" class="add-btn">
+          + Add Transaction
+        </a>
+      </section>
+
+      <!--Summary Card-->
+      <section class="summary-cards">
+        
+        <div class="summary-card">
+          <h3>Total Balance</h3>
+          <p id="total-balance">₹0</p>
+        </div>
+
+        <div class="summary-card">
+          <h3>Total Income</h3>
+          <p id="total-income">₹0</p>
+        </div>
+
+        <div class="summary-card">
+          <h3>Total Expenses</h3>
+          <p id="total-expenses">₹0</p>
+        </div>
+
+      </section>
+
+      <!--Dashboard Content-->
+      <section class="dashboard-content">
+
+        <!--Expense Overview-->
+        <div class="expense-overview">
+          <h2>Expense Overview</h2>
+
+          <div class="chart-container">
+            <div id="expense-chart"></div>
+          </div>
+
+        </div>
+
+        <!--Recent Transactions-->
+        <div class="recent-transactions">
+          <div class="section-header">
+            <h2>Recent Transactions</h2>
+            <a href="transactions.html">
+              View All
+            </a>
+          </div>
+
+          <div
+          id="recent-transactions-list">
+          <p>No transactions available.</p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!--JavaScript-->
+    <script src="script.js"></script>
+
+  </body>
+  </html>
+
+ 
