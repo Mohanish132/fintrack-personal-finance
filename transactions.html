@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+    <title>Transaction - FinTrack</title>
+
+    <link rel="stylesheet" href="styles.css">
+
+  </head>
+
+  <body>
+  
+    <!--Navigation Bar-->
+    <header class="navbar">
+      <div class="logo">
+        <span class="logo-icon">₹</span>
+        <span>FinTrack</span>
+      </div>
+    
+      <nav>
+        <a href="index.html">Dashboard</a>
+        <a href="transactions.html">Transactions</a>
+        <a href="add-transaction.html" class="nav-add-btn">
+          + Add Transaction
+        </a>
+      </nav>
+    </header>
+    
+    <!-- Transactions -->
+    <main class="transactions-container">
+      <h1>Transactions</h1>
+      <p>View all your transactions.</p>
+
+<div class="transaction-controls">
+  <input
+  type="text"
+  id="search-input"
+  placeholder="Search transactions..."
+  >
+
+  <select id="type-filter">
+    <option value="all">All Transactions</option>
+    <option value="income">Income</option>
+    <option value="expense">Expense</option>
+  </select>
+
+  <select id="sort-filter">
+    <option value="newest">Newest First</option>
+    <option value="oldest">Oldest First</option>
+    <option value="high">Amount: High to Low</option>
+    <option value="low">Amount: Low to High</option>
+  </select>
+</div>
+
+      <div id="transactions-list"></div>
+    </main>
+
+    <script src="script.js"></script>
+
+  </body>
+</html>
