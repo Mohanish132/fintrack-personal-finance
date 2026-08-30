@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+    <title>Add Transaction - FinTrack</title>
+
+    <link rel="stylesheet" href="styles.css">
+
+  </head>
+
+  <body>
+  
+    <!--Navigation Bar-->
+    <header class="navbar">
+      <div class="logo">
+        <span class="logo-icon">₹</span>
+        <span>FinTrack</span>
+      </div>
+    
+      <nav>
+        <a href="index.html">Dashboard</a>
+        <a href="transactions.html">Transactions</a>
+        <a href="add-transaction.html" class="nav-add-btn">
+          + Add Transaction
+        </a>
+      </nav>
+    </header>
+
+    <!-- Add Transaction Form -->
+    <main class="form-container">
+      <h1>Add Transaction</h1>
+      <p>Add a new income or expense.</p>
+      <form id="transaction-form">
+        <div class="form-group">
+          <label for="type">Transaction Type</label>
+          <select id="type" required>
+            <option value="">Select Type</option>
+            <option value="income">Income</option>
+            <option value="expense">Expense</option>
+          </select>
+        </div>
+        
+        <div class="form-group">
+          <label for="title">Title</label>
+          <input
+            type="text"
+            id="title"
+            placeholder="e.g. Grocery Shopping"
+            required
+          >
+        </div>
+        
+        <div class="form-group">
+          <label for="amount">Amount</label>
+          <input
+            type="number"
+            id="amount"
+            placeholder="Enter amount"
+            min="1"
+            required
+          >
+        </div>
+        
+        <div class="form-group">
+          <label for="category">Category</label>
+          <select id="category" required>
+            <option value="">Select Category</option>
+            <option value="Food">Food</option>
+            <option value="Shopping">Shopping</option>
+            <option value="Bills">Bills</option>
+            <option value="Entertainment">Entertainment</option>
+            <option value="Salary">Salary</option>
+            <option value="Other">Other</option>
+            <!-- existing options -->
+          </select>
+        </div>
+        
+        <div class="form-group">
+          <label for="date">Date</label>
+          <input type="date" id="date" required>
+        </div>
+        
+        <div class="form-group">
+          <label for="description">Description</label>
+          <textarea
+            id="description"
+            placeholder="Optional description"
+          ></textarea>
+        </div>
+
+        <!-- Transaction Type
+        <label for="type">Transaction Type</label>
+        <select id="type" required>
+          <option value="">Select Type</option>
+          <option value="income">Income</option>
+          <option value="expense">Expense</option>
+        </select> -->
+
+      <!-- Title -->
+      <!-- <label for="title">Title</label>
+      
+      <input
+      type="text"
+      id="title"
+      placeholder="e.g. Grocery Shopping"
+      required
+      >
+ -->
+
+<!-- Buttons -->
+<div>
+  <button type="submit">Add Transaction</button>
+  
+  <a
+  href="index.html">Cancel</a>
+</div>
+      </form>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
